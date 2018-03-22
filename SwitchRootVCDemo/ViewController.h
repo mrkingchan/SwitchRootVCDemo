@@ -11,5 +11,9 @@
 @interface ViewController : UIViewController
 
 
+@property(nonatomic,strong)UIColor *backColor;
+
+@property(nonatomic,strong)NSString *titleStr;
+
 @end
 
