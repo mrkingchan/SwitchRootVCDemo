@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController () {
     UISwitch *_switch;
 }
@@ -20,10 +19,17 @@
     [super viewDidLoad];
     self.view.backgroundColor =_backColor;
     self.navigationItem.title = _titleStr;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(next)];
     _switch = [[UISwitch alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - 50, [UIScreen mainScreen].bounds.size.height / 2 - 20, 100, 40)];
     [_switch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     _switch.on = [[NSUserDefaults standardUserDefaults]boolForKey:@"key"];
     [self.view addSubview:_switch];
+}
+
+- (void)next {
+    UIViewController*VC = [UIViewController new];
+    VC.view.backgroundColor = [UIColor grayColor];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 #pragma mark  -- private Method

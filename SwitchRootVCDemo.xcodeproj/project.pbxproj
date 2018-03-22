@@ -15,6 +15,7 @@
 		8FFABDD4206349E700194430 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDD3206349E700194430 /* main.m */; };
 		8FFABDDE206349E700194430 /* SwitchRootVCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDDD206349E700194430 /* SwitchRootVCDemoTests.m */; };
 		8FFABDE9206349E700194430 /* SwitchRootVCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDE8206349E700194430 /* SwitchRootVCDemoUITests.m */; };
+		8FFABDF820634F2E00194430 /* SuperNaviVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDF720634F2E00194430 /* SuperNaviVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8FFABDE4206349E700194430 /* SwitchRootVCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchRootVCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFABDE8206349E700194430 /* SwitchRootVCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchRootVCDemoUITests.m; sourceTree = "<group>"; };
 		8FFABDEA206349E700194430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FFABDF620634F2E00194430 /* SuperNaviVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperNaviVC.h; sourceTree = "<group>"; };
+		8FFABDF720634F2E00194430 /* SuperNaviVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperNaviVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				8FFABDC5206349E700194430 /* AppDelegate.m */,
 				8FFABDC7206349E700194430 /* ViewController.h */,
 				8FFABDC8206349E700194430 /* ViewController.m */,
+				8FFABDF620634F2E00194430 /* SuperNaviVC.h */,
+				8FFABDF720634F2E00194430 /* SuperNaviVC.m */,
 				8FFABDCA206349E700194430 /* Main.storyboard */,
 				8FFABDCD206349E700194430 /* Assets.xcassets */,
 				8FFABDCF206349E700194430 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				8FFABDC9206349E700194430 /* ViewController.m in Sources */,
 				8FFABDD4206349E700194430 /* main.m in Sources */,
+				8FFABDF820634F2E00194430 /* SuperNaviVC.m in Sources */,
 				8FFABDC6206349E700194430 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

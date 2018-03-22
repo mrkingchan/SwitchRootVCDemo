@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "SuperNaviVC.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     ViewController *VC = [ViewController new];
     VC.backColor = [UIColor blueColor];
     VC.titleStr = @"blue";
-    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:VC];
+    _window.rootViewController = [[SuperNaviVC alloc] initWithRootViewController:VC];
     [_window makeKeyAndVisible];
     return YES;
 }
