@@ -23,10 +23,23 @@
     middle.centerY = 10;
     middle.centerX = self.centerX;
     [self addSubview:middle];
-    for (int i = 0,j = 0;i < self.subviews.count;i ++) {
+    
+    //重新排版item按钮位置
+    for (int i = 0, j = 0; i <self.subviews.count; i ++) {
+        UIView *subView = self.subviews[i];
+        NSLog(@"subView = %@",subView);
+        if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            subView.x = self.width/ 5.0  * j ;
+            j ++;
+            if (j == 2) {
+                j ++;
+            }
+        }
+    }
+    /*for (int i = 0,j = 0;i < self.subviews.count;i ++) {
         UIView*subView = self.subviews[i];
         if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            subView.frame = CGRectMake(self.width * j / 5.0, subView.frame.origin.y, self.width / 5.0, subView.frame.size.height);
+            subView.frame = CGRectMake(self.width / 5.0 * j, subView.frame.origin.y, self.width / 5.0, subView.frame.size.height);
             j ++;
             if (j==2) {
                 j ++;
@@ -42,7 +55,7 @@
                 }
             }
         }
-    }
+    }*/
 }
 
 - (void)buttonAction:(id)sender {
