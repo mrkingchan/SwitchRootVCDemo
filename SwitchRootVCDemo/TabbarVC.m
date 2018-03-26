@@ -7,6 +7,9 @@
 //
 
 #import "TabbarVC.h"
+#import "Tabbar.h"
+#import "HomeVC.h"
+
 
 @interface TabbarVC ()
 
@@ -24,8 +27,17 @@
         [naviControllers addObject:navi];
     }
     self.viewControllers = naviControllers;
+    Tabbar *tabbar =[Tabbar new];
+    tabbar.completeBlock = ^{
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[HomeVC new]];
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
+    };
+    [self setValue:tabbar forKey:@"tabBar"];
+    
 }
 
+
+////UIViewController
 - (UIViewController *)viewControllerWithTitle:(NSString*)titleStr
                                   normalImage:(UIImage *)normalImage
                                 selectedImage:(UIImage *)selectedImage {

@@ -10,8 +10,6 @@
 #import "ViewController.h"
 #import "SuperNaviVC.h"
 #import "TabbarVC.h"
-#import "Tabbar.h"
-#import "HomeVC.h"
 @interface AppDelegate ()
 
 @end
@@ -28,12 +26,6 @@
     VC.titleStr = @"blue";
     _window.rootViewController = [[SuperNaviVC alloc] initWithRootViewController:VC];*/
     TabbarVC *rootVC = [TabbarVC new];
-    Tabbar *tabbar =[Tabbar new];
-    tabbar.completeBlock = ^{
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[HomeVC new]];
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
-    };
-    [rootVC setValue:tabbar forKey:@"tabBar"];
     _window.rootViewController =rootVC;
     [_window makeKeyAndVisible];
     return YES;
