@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "SuperNaviVC.h"
-
+#import "TabbarVC.h"
+#import "Tabbar.h"
 @interface AppDelegate ()
 
 @end
@@ -21,13 +22,17 @@
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
-    ViewController *VC = [ViewController new];
+    /*ViewController *VC = [ViewController new];
     VC.backColor = [UIColor blueColor];
     VC.titleStr = @"blue";
-    _window.rootViewController = [[SuperNaviVC alloc] initWithRootViewController:VC];
+    _window.rootViewController = [[SuperNaviVC alloc] initWithRootViewController:VC];*/
+    TabbarVC *rootVC = [TabbarVC new];
+    [rootVC setValue:[Tabbar new] forKey:@"tabBar"];
+    _window.rootViewController =rootVC;
     [_window makeKeyAndVisible];
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -16,6 +16,9 @@
 		8FFABDDE206349E700194430 /* SwitchRootVCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDDD206349E700194430 /* SwitchRootVCDemoTests.m */; };
 		8FFABDE9206349E700194430 /* SwitchRootVCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDE8206349E700194430 /* SwitchRootVCDemoUITests.m */; };
 		8FFABDF820634F2E00194430 /* SuperNaviVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABDF720634F2E00194430 /* SuperNaviVC.m */; };
+		8FFABE0D20688B0F00194430 /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE0C20688B0F00194430 /* TabbarVC.m */; };
+		8FFABE1020688C9700194430 /* Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE0F20688C9700194430 /* Tabbar.m */; };
+		8FFABE132068928600194430 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE122068928600194430 /* UIView+Position.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		8FFABDEA206349E700194430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FFABDF620634F2E00194430 /* SuperNaviVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperNaviVC.h; sourceTree = "<group>"; };
 		8FFABDF720634F2E00194430 /* SuperNaviVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperNaviVC.m; sourceTree = "<group>"; };
+		8FFABE0B20688B0F00194430 /* TabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
+		8FFABE0C20688B0F00194430 /* TabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
+		8FFABE0E20688C9700194430 /* Tabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tabbar.h; sourceTree = "<group>"; };
+		8FFABE0F20688C9700194430 /* Tabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabbar.m; sourceTree = "<group>"; };
+		8FFABE112068928600194430 /* UIView+Position.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
+		8FFABE122068928600194430 /* UIView+Position.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 			children = (
 				8FFABDC4206349E700194430 /* AppDelegate.h */,
 				8FFABDC5206349E700194430 /* AppDelegate.m */,
+				8FFABE0B20688B0F00194430 /* TabbarVC.h */,
+				8FFABE0C20688B0F00194430 /* TabbarVC.m */,
+				8FFABE0E20688C9700194430 /* Tabbar.h */,
+				8FFABE0F20688C9700194430 /* Tabbar.m */,
+				8FFABE112068928600194430 /* UIView+Position.h */,
+				8FFABE122068928600194430 /* UIView+Position.m */,
 				8FFABDC7206349E700194430 /* ViewController.h */,
 				8FFABDC8206349E700194430 /* ViewController.m */,
 				8FFABDF620634F2E00194430 /* SuperNaviVC.h */,
@@ -271,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FFABDC9206349E700194430 /* ViewController.m in Sources */,
+				8FFABE132068928600194430 /* UIView+Position.m in Sources */,
 				8FFABDD4206349E700194430 /* main.m in Sources */,
 				8FFABDF820634F2E00194430 /* SuperNaviVC.m in Sources */,
+				8FFABE1020688C9700194430 /* Tabbar.m in Sources */,
+				8FFABE0D20688B0F00194430 /* TabbarVC.m in Sources */,
 				8FFABDC6206349E700194430 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

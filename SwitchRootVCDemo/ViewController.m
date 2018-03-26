@@ -26,6 +26,7 @@
     [self.view addSubview:_switch];
 }
 
+#pragma mark  -- private Method
 - (void)next {
     UIViewController*VC = [UIViewController new];
     VC.view.backgroundColor = [UIColor grayColor];
