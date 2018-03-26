@@ -46,6 +46,8 @@
 }
 
 - (void)buttonAction:(id)sender {
-    puts(__func__);
+    if (_completeBlock) {
+        _completeBlock();
+    }
 }
 @end

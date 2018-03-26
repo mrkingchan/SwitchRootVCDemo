@@ -1,5 +1,5 @@
 //
-//  Tabbar.h
+//  HomeVC.h
 //  SwitchRootVCDemo
 //
 //  Created by Macx on 2018/3/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Tabbar : UITabBar
-
-@property(nonatomic,copy) void (^completeBlock)(void);
+@interface HomeVC : UIViewController
 
 @end
