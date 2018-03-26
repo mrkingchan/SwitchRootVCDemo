@@ -25,8 +25,9 @@
     [self addSubview:middle];
     
     //重新排版item按钮位置
-    for (int i = 0, j = 0; i <self.subviews.count; i ++) {
-        UIView *subView = self.subviews[i];
+//    for (int i = 0, j = 0; i <self.subviews.count; i ++) {
+    NSInteger j = 0;
+    for (UIView *subView in self.subviews) {
         NSLog(@"subView = %@",subView);
         if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             subView.x = self.width/ 5.0  * j ;

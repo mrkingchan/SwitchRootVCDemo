@@ -32,9 +32,7 @@
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
     };
     [self setValue:tabbar forKey:@"tabBar"];
-    
 }
-
 
 ////UIViewController
 - (UIViewController *)viewControllerWithTitle:(NSString*)titleStr
