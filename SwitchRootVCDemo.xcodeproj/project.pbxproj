@@ -19,7 +19,8 @@
 		8FFABE0D20688B0F00194430 /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE0C20688B0F00194430 /* TabbarVC.m */; };
 		8FFABE1020688C9700194430 /* Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE0F20688C9700194430 /* Tabbar.m */; };
 		8FFABE132068928600194430 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE122068928600194430 /* UIView+Position.m */; };
-		8FFABE192068964A00194430 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE182068964A00194430 /* HomeVC.m */; };
+		8FFABE1F2068EB7600194430 /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE1E2068EB7600194430 /* iToast.m */; };
+		8FFABE202068EBBD00194430 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFABE182068964A00194430 /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		8FFABE122068928600194430 /* UIView+Position.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 		8FFABE172068964A00194430 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		8FFABE182068964A00194430 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		8FFABE1D2068EB7500194430 /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		8FFABE1E2068EB7600194430 /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				8FFABDC5206349E700194430 /* AppDelegate.m */,
 				8FFABE0B20688B0F00194430 /* TabbarVC.h */,
 				8FFABE0C20688B0F00194430 /* TabbarVC.m */,
+				8FFABE1D2068EB7500194430 /* iToast.h */,
+				8FFABE1E2068EB7600194430 /* iToast.m */,
 				8FFABE0E20688C9700194430 /* Tabbar.h */,
 				8FFABE0F20688C9700194430 /* Tabbar.m */,
 				8FFABE172068964A00194430 /* HomeVC.h */,
@@ -290,12 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFABE202068EBBD00194430 /* HomeVC.m in Sources */,
+				8FFABE1F2068EB7600194430 /* iToast.m in Sources */,
 				8FFABDC9206349E700194430 /* ViewController.m in Sources */,
 				8FFABE132068928600194430 /* UIView+Position.m in Sources */,
 				8FFABDD4206349E700194430 /* main.m in Sources */,
 				8FFABDF820634F2E00194430 /* SuperNaviVC.m in Sources */,
 				8FFABE1020688C9700194430 /* Tabbar.m in Sources */,
-				8FFABE192068964A00194430 /* HomeVC.m in Sources */,
 				8FFABE0D20688B0F00194430 /* TabbarVC.m in Sources */,
 				8FFABDC6206349E700194430 /* AppDelegate.m in Sources */,
 			);

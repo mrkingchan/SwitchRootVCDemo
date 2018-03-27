@@ -27,6 +27,7 @@
     }
     self.viewControllers = naviControllers;
     Tabbar *tabbar =[Tabbar new];
+    //中间按钮点击
     tabbar.completeBlock = ^{
         UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[HomeVC new]];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
@@ -41,8 +42,10 @@
     UIViewController *viewController = [UIViewController new];
     viewController.navigationItem.title = titleStr;
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:titleStr
-                                                       image:[normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                                       image:[normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:
+                          [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     viewController.tabBarItem = item;
     return viewController;
 }
+
 @end
